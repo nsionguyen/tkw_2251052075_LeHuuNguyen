@@ -1,0 +1,25 @@
+{
+  "name": "quanlydinhduong",
+  "version": "1.0.0",
+  "description": "Trang web gioi thieu pham mem quan ly dinh duong",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./scr/input.css -o ./dist/output.css --watch ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsionguyen/tkw_2251052075_LeHuuNguyen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsionguyen/tkw_2251052075_LeHuuNguyen/issues"
+  },
+  "homepage": "https://github.com/nsionguyen/tkw_2251052075_LeHuuNguyen#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

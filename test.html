@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel=" stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="bg-white text-gray-900 antialiased font-sans">
+
+    <!--  NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <nav aria-label="Main Navigation"
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2.5">
+                <div
+                    class="w-8 h-8 rounded-lg bg-purple-600 flex items-center justify-center text-white font-black text-lg">
+                    N
+                </div>
+                <span class="text-xl font-bold tracking-tight text-gray-900">Landwind</span>
+            </a>
+
+            <!-- Menu Items -->
+            <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+                <li><a href="#company" class="hover:text-purple-600 transition-colors">Company</a></li>
+                <li><a href="#marketplace" class="hover:text-purple-600 transition-colors">Marketplace</a></li>
+                <li><a href="#features" class="hover:text-purple-600 transition-colors">Features</a></li>
+                <li><a href="#team" class="hover:text-purple-600 transition-colors">Team</a></li>
+                <li><a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- Auth Actions -->
+            <div class="flex items-center gap-4">
+                <a href="#login"
+                    class="text-sm font-semibold text-gray-700 hover:text-purple-600 transition-colors hidden sm:block">
+                    Log In
+                </a>
+                <a href="#get-started"
+                    class="px-4 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold text-sm transition-colors shadow-sm">
+                    Get started
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section aria-labelledby="hero-heading"
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Content Left -->
+            <div class="flex flex-col items-start gap-6">
+                <h1 id="hero-heading"
+                    class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-[1.15]">
+                    Building digital products & brands.
+                </h1>
+                <p class="text-base sm:text-lg text-gray-500 max-w-xl leading-relaxed">
+                    Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term
+                    value and drive economic growth.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#trial"
+                        class="px-5 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm transition-colors shadow-sm">
+                        Start 30 day free trial
+                    </a>
+                    <a href="#pricing"
+                        class="px-5 py-3 rounded-lg border border-gray-200 hover:bg-gray-50 text-gray-700 font-medium text-sm transition-colors">
+                        Pricing & FAQ
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image Right -->
+            <figure class="flex justify-center lg:justify-end">
+                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/hero-office-1.png"
+                    alt="3D illustration representing digital products and target marketing"
+                    class="w-full max-w-lg object-contain">
+            </figure>
+        </section>
+
+        <!--  CUSTOMER LOGOS -->
+        <section aria-labelledby="partners-heading" class="py-10 border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="partners-heading" class="sr-only">Our Partners and Clients</h2>
+                <ul
+                    class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center grayscale opacity-60">
+                    <li class="font-bold text-2xl tracking-tighter text-gray-800">Google</li>
+                    <li class="font-bold text-2xl tracking-tighter text-gray-800">Microsoft</li>
+                    <li class="font-bold text-2xl tracking-tighter text-gray-800">Spotify</li>
+                    <li class="font-bold text-2xl tracking-tighter text-gray-800">mailchimp</li>
+                    <li class="font-bold text-2xl tracking-tighter text-gray-800">airbnb</li>
+                    <li class="font-bold text-2xl tracking-widest text-gray-800">UBER</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--  FEATURES -->
+        <section id="features" aria-labelledby="features-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 id="features-heading" class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Designed for business teams like yours
+                </h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Here at Landwind we focus on markets where technology, innovation, and capital can unlock long-term
+                    value.
+                </p>
+            </div>
+
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <li class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+                    <article class="flex flex-col gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
+                            01</div>
+                        <h3 class="text-xl font-bold text-gray-900">Marketing Strategy</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Deliver continuous value to your customers with
+                            agile framework workflows and automated tools.</p>
+                    </article>
+                </li>
+                <li class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+                    <article class="flex flex-col gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
+                            02</div>
+                        <h3 class="text-xl font-bold text-gray-900">Development</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Empower your developers with modern stack
+                            components, APIs, and scalable infrastructure.</p>
+                    </article>
+                </li>
+                <li class="p-8 bg-gray-50 rounded-2xl border border-gray-100">
+                    <article class="flex flex-col gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
+                            03</div>
+                        <h3 class="text-xl font-bold text-gray-900">Design Systems</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Craft consistent user interfaces effortlessly
+                            with pre-built accessible UI blocks.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- STATS -->
+        <section aria-labelledby="stats-heading" class="bg-gray-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="stats-heading" class="sr-only">Key Statistics</h2>
+                <ul class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <li class="flex flex-col gap-2">
+                        <span class="text-4xl font-extrabold text-purple-400">99.9%</span>
+                        <span class="text-sm text-gray-400">Server Uptime</span>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <span class="text-4xl font-extrabold text-purple-400">600M+</span>
+                        <span class="text-sm text-gray-400">Users Reached</span>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <span class="text-4xl font-extrabold text-purple-400">100+</span>
+                        <span class="text-sm text-gray-400">Countries Served</span>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <span class="text-4xl font-extrabold text-purple-400">500+</span>
+                        <span class="text-sm text-gray-400">5-Star Reviews</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section aria-labelledby="testimonials-heading"
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-50 my-12 rounded-3xl">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 id="testimonials-heading" class="sr-only">Customer Reviews</h2>
+                <figure class="flex flex-col gap-6">
+                    <blockquote class="text-xl sm:text-2xl font-semibold text-gray-900 leading-snug">
+                        "Landwind is open-source, accessible, and it has allowed us to build clean interfaces 10x faster
+                        than before."
+                    </blockquote>
+                    <figcaption class="flex flex-col items-center gap-2">
+                        <strong class="text-gray-900 font-bold">Micheal Gough</strong>
+                        <span class="text-sm text-gray-500">CEO at Google</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!--  PRICING -->
+        <section id="pricing" aria-labelledby="pricing-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 id="pricing-heading" class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Pay as you grow
+                </h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Simple, transparent pricing plans for teams of all sizes.
+                </p>
+            </div>
+
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <li class="bg-white p-8 rounded-2xl border border-gray-200 flex flex-col justify-between gap-8">
+                    <article class="flex flex-col gap-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Starter</h3>
+                        <p class="text-gray-500 text-sm">Best option for personal use and for your next project.</p>
+                        <div class="text-4xl font-extrabold text-gray-900">$29 <span
+                                class="text-base font-normal text-gray-500">/month</span></div>
+                        <ul class="space-y-3 text-sm text-gray-600 border-t border-gray-100 pt-6">
+                            <li>✔ Individual configuration</li>
+                            <li>✔ No setup fees</li>
+                            <li>✔ Team size: 1 developer</li>
+                        </ul>
+                    </article>
+                    <button type="button"
+                        class="w-full py-3 rounded-lg border border-purple-600 text-purple-600 font-semibold hover:bg-purple-50 transition-colors">
+                        Get Started
+                    </button>
+                </li>
+
+                <li class="bg-purple-50 p-8 rounded-2xl border-2 border-purple-600 flex flex-col justify-between gap-8">
+                    <article class="flex flex-col gap-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Company</h3>
+                        <p class="text-gray-500 text-sm">Relevant for multiple users, extended support, and security.
+                        </p>
+                        <div class="text-4xl font-extrabold text-purple-600">$99 <span
+                                class="text-base font-normal text-gray-500">/month</span></div>
+                        <ul class="space-y-3 text-sm text-gray-700 border-t border-purple-200 pt-6">
+                            <li>✔ Individual configuration</li>
+                            <li>✔ Priority support 24/7</li>
+                            <li>✔ Team size: 10+ developers</li>
+                        </ul>
+                    </article>
+                    <button type="button"
+                        class="w-full py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section aria-labelledby="faq-heading" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 id="faq-heading" class="text-3xl font-extrabold text-gray-900 text-center mb-12">
+                Frequently asked questions
+            </h2>
+            <ul class="space-y-4">
+                <li class="border-b border-gray-200 pb-4">
+                    <details class="group">
+                        <summary
+                            class="font-bold text-gray-900 cursor-pointer flex justify-between items-center text-lg">
+                            <span>Can I use Landwind for commercial projects?</span>
+                            <span class="text-purple-600 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="mt-3 text-gray-500 text-sm leading-relaxed">
+                            Yes, Landwind is licensed under the MIT License, meaning you can use it for both personal
+                            and commercial applications.
+                        </p>
+                    </details>
+                </li>
+                <li class="border-b border-gray-200 pb-4">
+                    <details class="group">
+                        <summary
+                            class="font-bold text-gray-900 cursor-pointer flex justify-between items-center text-lg">
+                            <span>What does free trial include?</span>
+                            <span class="text-purple-600 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="mt-3 text-gray-500 text-sm leading-relaxed">
+                            You get 30 days of full access to all premium components, dashboard templates, and priority
+                            support.
+                        </p>
+                    </details>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section id="cta" aria-labelledby="cta-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16">
+            <div
+                class="bg-gray-50 rounded-3xl p-8 sm:p-16 text-center flex flex-col items-center gap-6 border border-gray-100">
+                <h2 id="cta-heading" class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Start your free trial today
+                </h2>
+                <p class="text-gray-500 max-w-xl text-base">
+                    Try Landwind Platform for 30 days. No credit card required.
+                </p>
+                <form action="/subscribe" method="post" class="w-full max-w-md flex flex-col sm:flex-row gap-3">
+                    <label for="email-cta" class="sr-only">Email address:</label>
+                    <input type="email" id="email-cta" name="email" placeholder="Enter your email..." required
+                        class="grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white">
+                    <button type="submit"
+                        class="px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors shrink-0">
+                        Free Trial
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <nav aria-label="Footer Navigation"
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <section aria-labelledby="footer-resources">
+                <h2 id="footer-resources" class="text-xs font-bold uppercase text-gray-400 tracking-wider mb-4">
+                    Resources</h2>
+                <ul class="space-y-2.5 text-sm font-medium text-gray-600">
+                    <li><a href="#docs" class="hover:text-purple-600">Documentation</a></li>
+                    <li><a href="#blocks" class="hover:text-purple-600">Flowbite Blocks</a></li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="footer-help">
+                <h2 id="footer-help" class="text-xs font-bold uppercase text-gray-400 tracking-wider mb-4">Help Center
+                </h2>
+                <ul class="space-y-2.5 text-sm font-medium text-gray-600">
+                    <li><a href="#github" class="hover:text-purple-600">GitHub</a></li>
+                    <li><a href="#contact" class="hover:text-purple-600">Contact Us</a></li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="footer-legal">
+                <h2 id="footer-legal" class="text-xs font-bold uppercase text-gray-400 tracking-wider mb-4">Legal</h2>
+                <ul class="space-y-2.5 text-sm font-medium text-gray-600">
+                    <li><a href="#privacy" class="hover:text-purple-600">Privacy Policy</a></li>
+                    <li><a href="#terms" class="hover:text-purple-600">Terms & Conditions</a></li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="footer-company">
+                <h2 id="footer-company" class="text-xs font-bold uppercase text-gray-400 tracking-wider mb-4">Company
+                </h2>
+                <ul class="space-y-2.5 text-sm font-medium text-gray-600">
+                    <li><a href="#about" class="hover:text-purple-600">About</a></li>
+                    <li><a href="#careers" class="hover:text-purple-600">Careers</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-100 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Landwind™. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

@@ -8,6 +8,69 @@
     --color-brand-600: #16a34a;
     --color-brand-700: #15803d;
 
+    --color-accent-300: #f7d27a;
+    --color-accent-400: #f0b429;
+    --color-accent-500: #d99a15;
 
 
+    --color-ink: #12211d;
+    --color-ink-invert: #eaf2ee;
+    --color-muted: #5c6f69;
+    --color-muted-invert: #93a8a1;
+    --color-line: #dfe6e2;
+    --color-line-invert: #24403a;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f5f8f6;
+    --color-surface-dark: #0e1c19;
+    --color-surface-dark-alt: #14312b;
+
+    --font-display: "Be Vietnam Pro", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+
+    --radius-card: 0.875rem;
+    --radius-pill: 999px;
+
+
+
+
+}
+
+
+
+@layer base {
+
+    html {
+
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+
+        }
+
+        body {
+
+
+                @apply bg-surface text-ink font-body antialiased;
+
+
+        }
+
+        h1, h2, h3 {
+
+                @apply font-display tracking-tight;
+        }
+}
+
+
+
+@layer components {
+
+    .section {
+
+        @apply mx-auto w-full max-w-6xl px-5 py-4 lg:py-28;
+    }
+
+    .eyebrow {
+
+            @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-shadow-brand-600;
+    }
 }

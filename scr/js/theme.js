@@ -22,5 +22,11 @@ export function initTheme() {
     if(localStorage.getItem(KEY)) return;
     root.classList.toggle("dark", e.matches);
  })
+
+ function sync () {
+
+    btn.setAttribute("aria-presses", String(isDark));
+    btn.setAttribute("aria-label", isDark() ? "Chuyen sang nen sang" : "Chuyen sang nen toi ");
+ }
 }
 
